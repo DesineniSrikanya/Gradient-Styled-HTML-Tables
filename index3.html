@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Creation</title>
+    <style>
+      * {
+        background-color: black;
+      }
+      th {
+        background: #2a7b9b;
+        background: linear-gradient(
+          90deg,
+          rgba(42, 123, 155, 1) 0%,
+          rgba(56, 147, 148, 1) 26%,
+          rgba(87, 199, 133, 1) 58%,
+          rgba(237, 221, 83, 1) 100%
+        );
+        color: white;
+      }
+      td {
+        background: #3f5efb;
+        background: radial-gradient(
+          circle,
+          rgba(63, 94, 251, 1) 0%,
+          rgba(130, 86, 200, 1) 35%,
+          rgba(140, 85, 192, 1) 41%,
+          rgba(156, 83, 180, 1) 49%,
+          rgba(252, 70, 107, 1) 100%
+        );
+        color: aqua;
+      }
+      h1 {
+        color: rgb(0, 238, 255);
+      }
+      caption {
+        color: rgb(43, 80, 226);
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>👩‍💻Creating Tables 📅</h1>
+    <table border="3" cellpadding="10" cellspacing="5">
+      <tr>
+        <th>Name</th>
+        <th>Language</th>
+        <th>Year</th>
+      </tr>
+      <tr>
+        <td>James</td>
+        <td>Java</td>
+        <td>1991</td>
+      </tr>
+      <tr>
+        <td>Guido</td>
+        <td>python</td>
+        <td>1972</td>
+      </tr>
+      <!--  -->
+      <tr>
+        <td>Dennis</td>
+        <td>c</td>
+        <td>1972</td>
+      </tr>
+    </table>
+
+    <table border="5" cellpadding="10" cellspacing="5">
+      <tr>
+        <th>Name</th>
+        <th colspan="3">Skills</th>
+      </tr>
+      <tr>
+        <td>James</td>
+        <td>Java</td>
+        <td>c</td>
+        <td>HTML</td>
+      </tr>
+      <tr>
+        <td>Guido</td>
+        <td>c++</td>
+        <td>Python</td>
+        <td>PHP</td>
+      </tr>
+    </table>
+
+    <table border="5" cellpadding="10" cellspacing="5">
+      <tr>
+        <th>Name</th>
+        <th>Companies</th>
+      </tr>
+      <tr>
+        <td rowspan="4">James</td>
+      </tr>
+      <tr>
+        <td>Sun Microsystems</td>
+      </tr>
+      <tr>
+        <td>Oracle</td>
+      </tr>
+      <tr>
+        <td>Liquid Robotics</td>
+      </tr>
+      <tr>
+        <td rowspan="4">Guido</td>
+      </tr>
+      <tr>
+        <td>Google</td>
+      </tr>
+      <tr>
+        <td>DropBox</td>
+      </tr>
+      <tr>
+        <td>Microsoft</td>
+      </tr>
+    </table>
+
+    <table border="5" cellpadding="5" cellspacing="5">
+      <caption>
+        JAVA FULL STACK DEVELOPMENT - TAP ACADEMY
+      </caption>
+      <tr>
+        <th>Day</th>
+        <th>9-10 AM</th>
+        <th>10-11 AM</th>
+        <th>11-12 PM</th>
+        <th>1-2 PM</th>
+        <th>2-4 PM</th>
+      </tr>
+      <tr>
+        <th>Monday</th>
+        <td>MySql</td>
+        <td>Java</td>
+        <td>SoftSkills</td>
+        <td rowspan="5">Lunch Break</td>
+        <td>Mock</td>
+      </tr>
+      <tr>
+        <th>Tuesday</th>
+        <td colspan="2">Project Class</td>
+        <td>programming</td>
+        <td>CSS</td>
+      </tr>
+      <tr>
+        <th>Wednesday</th>
+        <td>HTML</td>
+        <td>Python</td>
+        <td>DSA</td>
+        <td rowspan="2">Front End Project</td>
+      </tr>
+      <tr>
+        <th>Thursday</th>
+        <td>Java</td>
+        <td colspan="2">React js</td>
+      </tr>
+      <tr>
+        <th>Friday</th>
+        <td>Programming</td>
+        <td>Java</td>
+        <td>DSA</td>
+        <td>JavaScript</td>
+      </tr>
+      <tr>
+        <td colspan="6">Note: Friday 2-4 PM is optional activity Slot</td>
+      </tr>
+    </table>
+  </body>
+</html>
